@@ -4,7 +4,7 @@ const io = require('socket.io')(server);
 const PORT = process.env.PORT || 5000;
 
 app.get('/', function (req, res) {
-  res.send().status(200);
+  res.send('Hello World!').status(200);
 });
 
 server.listen(PORT, () => console.log(`Server started on port ${PORT}.`));
